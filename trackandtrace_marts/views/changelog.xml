@@ -1,0 +1,35 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="60098727" id="create:view:trackandtrace_marts.v_import_datamart" context="all" runOnChange="true">
+        <sqlFile path="v_import_datamart.sql" splitStatements="false" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="60067166" id="create:view:trackandtrace_marts.v_direct_mode_datamart" context="all" runOnChange="true">
+        <sqlFile path="v_direct_mode_datamart.sql" splitStatements="false" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="60067166" id="create:view:trackandtrace_marts.v_full_import_datamart" context="all" runOnChange="true">
+        <sqlFile path="v_full_import_datamart.sql" splitStatements="false" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="60115905" id="create:view:trackandtrace_marts.refactoring1_views" context="all" runOnChange="true">
+        <sqlFile path="v_customs_declaration.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_customs_declaration_items.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_kalypso_containers.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_ries_shipment_tracking.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_rms_item_info.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_rms_order_shipments.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_rms_orders.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_base_ries_invoices.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_ries_orders.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_import_datamart_v2.sql" splitStatements="false" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="60115905" id="create:view:trackandtrace_marts.navigator:v1.2.2" context="all" runOnChange="true">
+        <sqlFile path="v_full_import_datamart.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_direct_mode_datamart.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_rms_order_shipments.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_rms_orders.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_ries_orders.sql" splitStatements="false" relativeToChangelogFile="true" />
+        <sqlFile path="v_import_datamart_v2.sql" splitStatements="false" relativeToChangelogFile="true" />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,43 @@
+create or replace view v_kalypso_containers as
+select oc_id
+     , order_id
+     , rms_order_id
+     , adeo_order_id
+     , invoice_id
+     , container_id1
+     , container_id2
+     , container_creating_date
+     , adeo_code
+     , adeo_dep_name
+     , delivery_unit_ordered_unit_code
+     , delivery_type
+     , production_diff
+     , purchasing_incoterm_code
+     , purchasing_incoterm_city_code
+     , country_of_loading_code
+     , country_of_loading_name
+     , city_of_discharge_code
+     , city_of_discharge_name
+     , status_kalypso
+     , shipped_container_number
+     , delivered_container_number
+     , shipped_information_number_of_units
+     , to_be_shipped_information_number_of_units
+     , to_be_shipped_information_volume
+     , shipped_information_volume
+     , updated_delivery_date
+     , updated_shipping_date
+     , shipment_comments
+     , confirmed_delivery_date
+     , confirmed_shipping_date
+     , shipment_release_date
+     , selling_invoice_date
+     , container_type_1st_leg
+     , loading_type_1st_leg
+     , container_type_2nd_leg
+     , loading_type_2nd_leg
+     , forwarder_id
+     , main_transport_company_id
+     , bu_name
+     , dbf_kalypso_containers
+from kalypso_containers;

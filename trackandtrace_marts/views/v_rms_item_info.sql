@@ -1,0 +1,21 @@
+create or replace view v_rms_item_info as
+ select lm_code
+   , adeo_code
+   , lm_name
+   , dep_code
+   , dep_name
+   , sub_dep_code
+   , sub_dep_name
+   , lm_type
+   , lm_type_desc
+   , lm_subtype
+   , lm_subtype_desc
+   , import_attr
+   , flow_type
+   , top1000
+   , brand
+   , mdd
+   , best_price
+   , gamma
+   , dbf_rms_item_info
+ from rms_item_info;

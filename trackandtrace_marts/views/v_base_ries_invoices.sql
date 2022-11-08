@@ -1,0 +1,29 @@
+create or replace view v_base_ries_invoices as
+select invoice_id
+    , invoice_status
+    , container_id
+    , oc_id
+    , order_id
+    , shipment_id
+    , rms_id
+    , adeo_order_number
+    , delivery_terms
+    , invoice_date
+    , payment_date
+    , seal
+    , container_type
+    , invoice_total_volume
+    , invoice_qty
+    , invoice_qty_pkgs
+    , invoice_total_amount
+    , invoice_net_weight
+    , invoice_gross_weight
+    , invoice_pallets
+    , adeo_code
+    , lm_code
+    , ean_code
+    , invoice_price
+    , invoice_curr
+    , invoice_hs_code
+    , dbf_base_ries_invoices
+from base_ries_invoices;

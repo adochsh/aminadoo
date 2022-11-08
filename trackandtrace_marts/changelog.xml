@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="init.sql" relativeToChangelogFile="true"/>
+    <include file="drops.sql" relativeToChangelogFile="true"/>
+     <includeAll path="tables/" relativeToChangelogFile="true"/>
+    <include file="functions/changelog.xml" relativeToChangelogFile="true"/>
+    <include file="views/changelog.xml" relativeToChangelogFile="true"/>
+    <include file="grants.sql" relativeToChangelogFile="true"/>
+
+    <changeSet author="60098727" id="reset role" runAlways="true" runOnChange="true">
+        <sql>RESET ROLE</sql>
+    </changeSet>
+</databaseChangeLog>

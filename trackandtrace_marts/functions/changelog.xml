@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="60098727" id="create:trackandtrace_marts.import_datamart_fn" context="all" runOnChange="true" >
+        <sqlFile path="import_datamart_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60067166" id="create:trackandtrace_marts.direct_mode_datamart_fn" context="all" runOnChange="true" >
+        <sqlFile path="direct_mode_datamart_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60067166" id="create:trackandtrace_marts.full_import_datamart_fn" context="all" runOnChange="true" >
+        <sqlFile path="full_import_datamart_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60115905" id="create:trackandtrace_marts.refactoring1" context="all" runOnChange="true" >
+        <sqlFile path="customs_declaration_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="customs_declaration_items_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="kalypso_containers_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="ries_shipment_tracking_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="rms_item_info_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="rms_orders_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="rms_orders_shipments_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="ries_orders_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="base_ries_invoices_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+        <sqlFile path="import_datamart_v2_fn.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+</databaseChangeLog>
