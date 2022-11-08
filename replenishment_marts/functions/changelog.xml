@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="60098727" id="create:function:replenishment_marts.fn_load_gold_forecast" context="all" runOnChange="true" >
+            <sqlFile path="fn_load_gold_forecast.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:replenishment_marts.fn_load_gold_reserve" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_reserve.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_rms_trns_sales" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_rms_trns_sales.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_target_service_level" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_target_service_level.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_statistics_init" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_statistics_init.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_detailed_statistics_init" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_detailed_statistics_init.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_reserve_init" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_reserve_init.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_dump_gold_specifics" context="all" runOnChange="true" >
+        <sqlFile path="fn_dump_gold_specifics.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_art_param" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_art_param.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_best_sellers" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_best_sellers.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_stores_supply_chain_setting" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_stores_supply_chain_setting.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_dead_stock" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_dead_stock.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_cc_sales" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_cc_sales.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_new_items" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_new_items.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_abc" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_abc.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_statistics_common" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_statistics_common.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_statistics_aggregated_incremental" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_statistics_aggregated.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_statistics_detailed_incremental" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_statistics_detailed.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_historical_tables" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_historical_tables.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_detailed_statistics_init_backup" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_detailed_statistics_init_backup.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_reserve_init_backup" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_reserve_init_backup.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_supplier_delays" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_supplier_delays.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_forecast_init" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_forecast_init.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_historical_tables_init" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_historical_tables_init.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_order_corrections_analysis" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_order_corrections_analysis.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_toxic_stock" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_toxic_stock.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_statistics_cc_orders" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_statistics_cc_orders.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:function:fn_load_gold_specifics_bestsellers_b2b" context="all" runOnChange="true" >
+        <sqlFile path="fn_load_gold_specifics_bestsellers_b2b.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+</databaseChangeLog>
