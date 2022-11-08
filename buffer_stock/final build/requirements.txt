@@ -1,0 +1,12 @@
+
+
+pandas
+streamlit
+gsheetsdb==0.1.13.1
+pyxlsb
+xlsxwriter
+protobuf==3.20
+click==8.0.4
+streamlit-aggrid 
+cx_Oracle==8.3
+python-dotenv

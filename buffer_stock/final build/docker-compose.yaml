@@ -1,0 +1,10 @@
+version: "3"
+services:
+  streamlit-app:
+    env_file:
+      - .env
+    build: ./
+    command: streamlit run /app/app.py 
+
+    ports:
+      - 8501:8501
