@@ -14,7 +14,7 @@ main lib: https://docs.streamlit.io/library/get-started/installation
 
 ### Main logic of dataset in:
  recommend_sql.py  
-
+data model sreenshit:
 <img width="1065" alt="image" src="https://user-images.githubusercontent.com/83408191/199677206-2d8a3536-2547-4c14-bfa4-1dec49d35930.png">
 
 
