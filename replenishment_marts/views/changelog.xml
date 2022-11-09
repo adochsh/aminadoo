@@ -1,0 +1,97 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="60098727" id="create:view:v_gold_forecast" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_forecast.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_replenishment_loads_log" context="all" runOnChange="true" >
+        <sqlFile path="v_replenishment_loads_log.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_reserve" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_reserve.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_rms_trns_sales_daily" context="all" runOnChange="true" >
+        <sqlFile path="v_rms_trns_sales.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_target_service_level" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_target_service_level.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_statistics" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_statistics.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_corrections_detailed" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_corrections_detailed.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_corr_detailed" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_corr_detailed.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_specifics_art_param" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_specifics_art_param.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_ett_att_for_upd" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_ett_att_for_upd.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_gold_specifics_best_sellers" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_gold_specifics_best_sellers.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_stores_supply_chain_setting" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_stores_supply_chain_setting.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_gold_specifics_dead_stock" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_gold_specifics_dead_stock.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_new_items" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_new_items.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_gold_specifics_abc" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_gold_specifics_abc.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_specifics_agg_detailed" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_specifics_agg_detailed.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_specifics_agg" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_specifics_agg.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_specifics_agg_delta" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_specifics_agg_delta.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_supplier_delays" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_supplier_delays.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_artparexc_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_artparexc_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_cdedetcde_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_cdedetcde_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_cdeentcde_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_cdeentcde_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_fctdetpvh_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_fctdetpvh_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_fctentpvh_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_fctentpvh_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_prpdetprop_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_prpdetprop_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_prpentprop_historical" context="all" runOnChange="true" >
+        <sqlFile path="v_prpentprop_historical.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_gold_order_corrections_analysis" context="all" runOnChange="true" >
+        <sqlFile path="v_gold_order_corrections_analysis.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_next_proposal" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_next_proposal.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_gold_specifics_toxic_stock" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_gold_specifics_toxic_stock.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+    <changeSet author="60098727" id="create:view:v_tmp_gold_specifics_bestsellers_b2b" context="all" runOnChange="true" >
+        <sqlFile path="v_tmp_gold_specifics_bestsellers_b2b.sql" splitStatements="false" relativeToChangelogFile="true"/>
+    </changeSet>
+</databaseChangeLog>
