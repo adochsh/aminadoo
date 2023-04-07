@@ -2,8 +2,13 @@
 Web-page that launches recommendations about how much of goods (buffer stocks) the manager of warehouse should redistribute by clicking to the button, it shows:
   - table visualization of about current situation of all data that is related: item name;  warehouse stock; store stock; store reserves; supplier name; store id; existing approved orders info: nearest delivery date, lastest delivery date, amount in transit; planning delivery date; daily forecast, amount of forecast(till nearest delivery date or planning delivery date); recommeded amount for push from warehous to store. 
 
+It helps to make pushes from warehouses to stores, which helps to reduces reserves in stores and reduction poor-performing stocks in warehouses. It improved the Inventory Turnover OKR metric for warehouses and also increased profitability for the company.
 
-from warehouses to stores, resulting in a 10% reduction of reserves in stores and an 80% reduction in poor-performing warehouse stocks. This significantly improved the Inventory Turnover OKR metric for warehouses and also increased profitability for the company.
+
+### Data model /logic of dataset in:
+ recommend_sql.py  
+data model sreenshit:
+<img width="1065" alt="image" src="https://user-images.githubusercontent.com/83408191/199677206-2d8a3536-2547-4c14-bfa4-1dec49d35930.png">
 
 ### Run locally:
   1. ``` cd ../final build   ```
@@ -16,11 +21,6 @@ from warehouses to stores, resulting in a 10% reduction of reserves in stores an
 
 ### All requirements in requirements.txt
 main lib: https://docs.streamlit.io/library/get-started/installation
-
-### Main logic of dataset in:
- recommend_sql.py  
-data model sreenshit:
-<img width="1065" alt="image" src="https://user-images.githubusercontent.com/83408191/199677206-2d8a3536-2547-4c14-bfa4-1dec49d35930.png">
 
 
 ### Main visualization of simple table ->  ```st.dataframe(df)```:  
