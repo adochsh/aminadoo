@@ -1,4 +1,9 @@
-добавить business description!!!!
+
+Web-page that launches recommendations about how much of goods (buffer stocks) the manager of warehouse should redistribute by clicking to the button, it shows:
+  - table visualization of about current situation of all data that is related: item name;  warehouse stock; store stock; store reserves; supplier name; store id; existing approved orders info: nearest delivery date, lastest delivery date, amount in transit; planning delivery date; daily forecast, amount of forecast(till nearest delivery date or planning delivery date); recommeded amount for push from warehous to store. 
+
+
+from warehouses to stores, resulting in a 10% reduction of reserves in stores and an 80% reduction in poor-performing warehouse stocks. This significantly improved the Inventory Turnover OKR metric for warehouses and also increased profitability for the company.
 
 ### Run locally:
   1. ``` cd ../final build   ```
