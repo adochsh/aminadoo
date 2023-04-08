@@ -8,7 +8,7 @@ It helps to make pushes from warehouses to stores, which helps to reduce reserve
 
 ### Data model /logic of dataset in:
  recommend_sql.py  
-data model sreenshit:
+data model sreenshot:
 <img width="1065" alt="image" src="https://user-images.githubusercontent.com/83408191/199677206-2d8a3536-2547-4c14-bfa4-1dec49d35930.png">
 
 ### Run locally:
