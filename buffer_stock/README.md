@@ -1,6 +1,6 @@
 
 Web-page that launches recommendations about how much of goods (buffer stocks) the manager of warehouse should redistribute by clicking to the button, it shows:
-  - table visualization about current situation of all data that is related: item name;  warehouse stock; store stock; store reserves; supplier name; store id; existing approved orders info: nearest delivery date, lastest delivery date, amount in transit; planning delivery date; daily forecast, amount of forecast(till nearest delivery date or planning delivery date); recommeded amount for push from warehous to store. 
+  - table visualization about current situation of all data that is related: item name;  warehouse stock; store stock; store reserves; supplier name; store id; existing approved orders info: nearest delivery date, lastest delivery date, amount in transit; planning delivery date; daily forecast, amount of forecast(till nearest delivery date or planning delivery date); recommended amount for push from warehous to store. 
   - button to download a template with already filled in data to make push in master system (RMS->WMS)
 
 It helps to make pushes from warehouses to stores, which helps to reduce reserves in stores and reduction poor-performing stocks in warehouses. It improves the Inventory Turnover OKR metric for warehouses and also increases profitability for the company.
